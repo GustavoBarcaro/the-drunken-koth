@@ -1,0 +1,69 @@
+.login {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & .container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2.4px 2.7px 10.7px hsl(0deg 0% 0% / 0.46);
+    padding: 1rem;
+    width: 368px;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+    & .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & .logo {
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    & .inputContainer {
+      & .inputContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1rem;
+        font-weight: 400;
+        & label {
+          margin-bottom: 8px;
+        }
+        & input {
+          padding: 0.25rem;
+          width: 100%;
+          border: 1px solid var(--gray-500);
+          border-radius: 0.2rem;
+          height: 2.2rem;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+        & + .inputContent {
+          margin-top: 1rem;
+        }
+      }
+    }
+    & .loginBtn {
+      position: relative;
+      height: 2.5rem;
+      font-size: 1.125rem;
+      border-radius: 0.4rem;
+      font-weight: 700;
+      line-height: 1.5rem;
+      outline: 0;
+      border: 1px solid var(--purple-500);
+      background-color: var(--white);
+      color: var(--purple-500);
+      margin-top: 3rem;
+      transition: filter 0.2s ease-in-out;
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}

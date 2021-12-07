@@ -1,0 +1,24 @@
+.container {
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+.content {
+  width: 80%;
+  border-radius: 15px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.table {
+  margin-top: 1rem;
+}
+.tableHead {
+  background-color: var(--chakra-colors-facebook-100);
+}
